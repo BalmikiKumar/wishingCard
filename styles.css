@@ -1,0 +1,162 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #333;
+  }
+
+  
+  
+  .main-container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* User Card */
+  .user-card {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(45deg, #d684d2eb, #fad0c4, #fbc2eb, #a18cd1, #f093fb);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow:  0px 5px 5px rgb(1, 237, 41);
+    animation: fadeIn 1.5s ease-in-out;
+     
+  }
+  
+  img{
+    position: relative;
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10%;
+  }
+  
+  .user-card h1 {
+    font-size: 28px;
+    color: #ff6347;
+    margin-bottom: 10px;
+  }
+  
+  .user-card .subtext {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .user-card label {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+  }
+  
+  .user-card input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    border: 1mm ridge rgba(211, 220, 50, .6);
+    border-radius: 10px;
+    font-size: 16px;
+    background:linear-gradient(45deg, #d684d2eb, #fad0c4, #fbc2eb, #a18cd1, #f093fb);
+  }
+  
+  .user-card button {
+    padding: 12px 30px;
+    background-color: #ff6347;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+   
+  
+  .user-card button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Result Section */
+  .result-container {
+    display: none;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .shayari-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0px 0px 10px #ff6647;
+    margin-top: 20px;
+    animation: bounce 2s infinite ease-in-out;
+  }
+  
+  .heart-photo {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 20px auto;
+    background: #fb5757;
+    clip-path: polygon(48% 0, 84% 20%, 84% 65%, 84% 100%, 10% 100%, 10% 62%, 10% 20%);
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: pulse 2s infinite;
+  }
+  
+  .heart-photo img {
+    width: 60%;
+    height: 80%;
+    object-fit: cover;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Year Shayari</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <div class="main-container">
+    <!-- User Card -->
+    <div id="userCard" class="user-card">
+      <img src="lordGanesh.jpg" />
+      <p class="subtext">ॐ श्री गणेशाय नमः  </p>
+      <h1>🎉HAPY NEW YEAR🎉🎉2025🎉</h1>
+      <form id="shayariForm">
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="photo">Upload Your Photo:</label>
+        <input type="file" id="photo" accept="image/*" required>
+
+        <label for="luckyNumber">Choose a Lucky Number (1-5):</label>
+        <input type="number" id="luckyNumber" min="1" max="5" placeholder="Between 1 to 5">
+        <div>
+          <audio controls autoplay>
+            <source src="newYearSong.m4a" type="audio/mp4">
+          </audio>
+        </div>
+        
+
+        <button type="button" id="okClickMe"> OK, CLICK</button> 
+      </form>
+    </div>
+   
+
+    <!-- Result Section -->
+    
+    <div id="result" class="result-container">
+      <h2 id="nameGreet" style="color: rgb(243, 52, 208);"></h2>
+      <div id="heartPhoto" class="heart-photo"></div>
+      <div id="shayari" class="shayari-text"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
